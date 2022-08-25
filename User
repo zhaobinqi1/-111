@@ -1,0 +1,51 @@
+namespace Models
+{
+    public class User
+    {
+        public User(string Uname,string Upwd,string Ulevel)
+        {
+            this.UserName = Uname;
+            this.Password = Upwd;
+            this.Level = Ulevel;
+        }
+
+        private string _userName;
+
+        public string UserName
+        {
+            get { 
+                return _userName; 
+            }
+            set { 
+                _userName = value;
+            }
+        }
+
+        private string _password = "";
+
+        public string Password
+        {
+            get {
+                return _password; 
+            }
+            set { 
+                _password = value;
+            }
+        }
+
+        private string _level;
+        public string Level
+        {
+            get
+            {
+                return _level;
+            }
+            set
+            {
+                _level = value;             
+            }
+        }
+
+
+    }
+}
